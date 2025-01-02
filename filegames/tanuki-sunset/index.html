@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="panic.js"></script>
+    <script src="/escapejs/escape-redirect.js"></script>
+    <title>Tanuki Sunset</title>
+    <script>
+      // Apply the saved title when the page loads
+      document.addEventListener('DOMContentLoaded', function () {
+        const savedTitle = localStorage.getItem('tabCloakerTitle');
+        if (savedTitle && savedTitle !== 'default') {
+          document.title = savedTitle;
+        }
+      });
+    </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GT36B2MRNE"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+
+          gtag('config', 'G-GT36B2MRNE');
+        </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/cover.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/cover.png" />
+    <script src="js/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "tanuki.json");
+    </script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 100%; height: 100%; margin: 0;"></div>
+    </div>
+    <script type="text/javascript" src="/js/main.js"></script>
+  </body>
+</html>
