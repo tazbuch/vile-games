@@ -1,1 +1,5 @@
-# vile-games
+made by tazbuch
+
+discord:tazbuchy
+
+youtube:tazbuchh
